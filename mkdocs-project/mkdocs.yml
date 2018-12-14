@@ -1,0 +1,46 @@
+# This is the main configuration file for the MkDocs website.
+# Use hash-comments to comment out pages have not been written
+# Reference: http://www.mkdocs.org/user-guide/configuration/
+#
+site_name: OWF Learn C
+pages:
+- Home: index.md
+- Development Environment:
+  - Overview: dev-env/overview.md
+  - C Compiler:  dev-env/c-compiler.md
+  - Command Line:  dev-env/command-line.md
+  - IDE (Eclipse):  dev-env/ide-eclipse-c.md
+  - cunit:  dev-env/cunit.md
+- Running a C Program:  run-c-program.md
+- C Language:
+  - Overview:  lang/overview.md
+  - C Programming Basics:  lang/programming-basics.md
+  - C Best Practices:  lang/best-practices.md
+  - Command Line Parameters:  lang/command-line-parameters.md
+  - Global vs. Local Variables:  lang/global-local-variables.md
+  - Functions:  lang/functions.md
+  - Error Handling:  lang/error-handling.md
+- Logging:
+  - 'Overview': 'logging/overview.md'
+- Development Tasks:
+  - Overview:  dev-tasks/overview.md
+  - 'Testing with cunit': 'dev-tasks/testing-cunit.md'
+  - Documenting C Code:  dev-tasks/documenting.md
+#- C Tools for Water Resources:  water-resources.md
+# ------- configuration properties ---------------
+# Use Material theme
+# - installation notes:  https://github.com/squidfunk/mkdocs-material
+theme: material
+#
+#theme: readthedocs
+#Don't indicate the repo because Edit will be shown on every page (don't want that in deployed mode)
+# - Also see edit_uri if repo_url is specified
+#repo_url:  https://github.com/OpenWaterFoundation/owf-learn-c
+site_description:  'Open Water Foundation Learn C'
+site_author:  'Open Water Foundation'
+site_favicon:  'images/OWF-Logo-Favicon-32x32.png'
+copyright:  'Copyright Open Water Foundation'
+# Extra options
+extra_css:
+  # Use extra CSS to customize styles, based on theme
+  - 'css/extra-material-theme.css'
