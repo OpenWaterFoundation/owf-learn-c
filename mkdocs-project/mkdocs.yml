@@ -51,4 +51,4 @@ site_description:  'Open Water Foundation Learn C'
 # - installation notes:  https://github.com/squidfunk/mkdocs-material
 theme:
   name: 'material'
-  favicon: 'images/OWF-Logo-Favicon-32x32.ico'
+  favicon: 'images/OWF-Logo-Favicon-32x32.png'
