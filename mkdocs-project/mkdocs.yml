@@ -2,8 +2,8 @@
 # Use hash-comments to comment out pages have not been written
 # Reference: http://www.mkdocs.org/user-guide/configuration/
 #
-site_name: OWF Learn C
-pages:
+site_name: Learn / C
+nav:
 - Home: index.md
 - Development Environment:
   - Overview: dev-env/overview.md
@@ -27,20 +27,28 @@ pages:
   - 'Testing with cunit': 'dev-tasks/testing-cunit.md'
   - Documenting C Code:  dev-tasks/documenting.md
 #- C Tools for Water Resources:  water-resources.md
-# ------- configuration properties ---------------
-# Use Material theme
-# - installation notes:  https://github.com/squidfunk/mkdocs-material
-theme: material
 #
-#theme: readthedocs
-#Don't indicate the repo because Edit will be shown on every page (don't want that in deployed mode)
-# - Also see edit_uri if repo_url is specified
-#repo_url:  https://github.com/OpenWaterFoundation/owf-learn-c
-site_description:  'Open Water Foundation Learn C'
-site_author:  'Open Water Foundation'
-site_favicon:  'images/OWF-Logo-Favicon-32x32.png'
+# ------- configuration properties ---------------
 copyright:  'Copyright Open Water Foundation'
-# Extra options
+# Extra options.
 extra_css:
   # Use extra CSS to customize styles, based on theme
   - 'css/extra-material-theme.css'
+# ------------------------------------------------
+# Google Analytics
+# - see:  https://squidfunk.github.io/mkdocs-material/getting-started/#google-analytics
+extra:
+  analytics:
+    provider: google
+    property: 'G-KJFMBY739T'
+#Don't indicate the repo because Edit will be shown on every page (don't want that in deployed mode)
+# - Also see edit_uri if repo_url is specified
+#repo_url:  https://github.com/OpenWaterFoundation/owf-learn-c
+site_author:  'Open Water Foundation'
+site_description:  'Open Water Foundation Learn C'
+# ------------------------------------------------
+# Use Material theme
+# - installation notes:  https://github.com/squidfunk/mkdocs-material
+theme:
+  name: 'material'
+  favicon: 'images/OWF-Logo-Favicon-32x32.ico'
